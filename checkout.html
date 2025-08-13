@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Finalizar Compra</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Finalizar Compra</h2>
+
+<div id="resumo">
+    <p>Produto: Produto X</p>
+    <p>Preço: R$ 100,00</p>
+</div>
+
+<h3>Escolha o método de pagamento</h3>
+<select id="pagamento">
+    <option value="cartao">Cartão de Crédito</option>
+    <option value="boleto">Boleto</option>
+    <option value="pix">PIX</option>
+</select>
+<br><br>
+<button onclick="finalizar()">Finalizar Compra</button>
+
+<script>
+function finalizar() {
+    let metodo = document.getElementById('pagamento').value;
+    alert("Compra finalizada!\nMétodo de pagamento: " + metodo);
+    window.location.href = "index.html";
+}
+</script>
+</body>
+</html>

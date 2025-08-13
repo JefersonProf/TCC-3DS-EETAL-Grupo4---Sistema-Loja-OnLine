@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Minha Loja Online</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Minha Loja</h1>
+    <nav>
+        <a href="login.php">Login</a>
+        <a href="cadastro.php">Cadastro</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Vitrine de Produtos</h2>
+    <div class="produtos">
+        <div class="produto">
+            <img src="imagens/produto1.png" alt="Tenis Goya">
+            <h3>Tênis Goya</h3>
+            <p>R$ 50,00</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="https://via.placeholder.com/200" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>R$ 80,00</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="https://via.placeholder.com/200" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>R$ 120,00</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+    </div>
+</main>
+
+<script>
+function comprar() {
+    alert("Você precisa estar logado para comprar!");
+    window.location.href = "login.php";
+}
+</script>
+
+</body>
+</html>
