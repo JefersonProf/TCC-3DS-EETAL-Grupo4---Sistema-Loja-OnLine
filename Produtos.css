@@ -1,0 +1,230 @@
+/* ====== Estilos Gerais ====== */
+body {
+  background: linear-gradient(to bottom, #e6f0ff 0%, #f2f8ff 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ====== Header ====== */
+header {
+  text-align: center;
+  padding: 35px 20px;
+  background: linear-gradient(to right, #cce0ff, #99c2ff);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.3em;
+  color: #003366;
+}
+
+header p {
+  margin: 10px 0 0;
+  color: #003366;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/* ====== Navegação ====== */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 0;
+  background-color: #99c2ff;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #003366;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #66b3ff;
+  color: #fff;
+}
+
+/*botão de carrinho moderno */
+#botao-carrinho {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #3399ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#botao-carrinho:hover {
+  background-color: #66b3ff;
+  transform: scale(1.1);
+}
+
+#botao-carrinho .icone {
+  font-size: 28px;
+  color: white;
+}
+
+#botao-carrinho #contador-carrinho {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* ====== Container Produtos ====== */
+main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ====== Card Produto ====== */
+.produto-detalhe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-detalhe:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* ====== Imagem Produto ====== */
+.imagem-produto img {
+  max-width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.produto-detalhe:hover img {
+  transform: scale(1.05);
+}
+
+/* ====== Descrição Produto ====== */
+.descricao-produto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.descricao-produto h2 {
+  color: #003366;
+  margin-bottom: 12px;
+  font-size: 1.5em;
+}
+
+.descricao-produto p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* ====== Input Quantidade ====== */
+.quantidade {
+  width: 70px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-right: 15px;
+}
+
+/* ====== Botão Comprar ====== */
+.btn-comprar {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 12px;
+  background-color: #66b3ff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.btn-comprar:hover {
+  background-color: #3399ff;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background: linear-gradient(to right, #cce0ff, #99c2ff);
+  color: #003366;
+  font-size: 14px;
+  margin-top: auto;
+  box-shadow: 0 -4px 6px rgba(0,0,0,0.05);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* ====== Responsivo ====== */
+@media (max-width: 768px) {
+  .produto-detalhe {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-produto img {
+    max-width: 180px;
+    margin-bottom: 15px;
+  }
+
+  .descricao-produto {
+    min-width: unset;
+  }
+
+  .quantidade {
+    margin-bottom: 10px;
+  }
+}

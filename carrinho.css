@@ -1,0 +1,109 @@
+body {
+  background-color: #e6f0ff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 25px 0;
+  background: linear-gradient(to right, #cce0ff, #99c2ff);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  background-color: #99c2ff;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003366;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background-color: #66b3ff;
+  color: white;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.item-carrinho {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.quantidade-controle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.quantidade-controle button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #66b3ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.quantidade-controle button:hover {
+  background-color: #3399ff;
+}
+
+#total-container {
+  margin-top: 30px;
+  text-align: right;
+}
+
+#total-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3399ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#total-container button:hover {
+  background-color: #66b3ff;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 0;
+  background: linear-gradient(to right, #cce0ff, #99c2ff);
+  color: #003366;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .quantidade-controle {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #total-container {
+    text-align: center;
+  }
+}
