@@ -1,0 +1,64 @@
+/* ===== Variáveis e reset ===== */
+:root{
+  --bg1:#e6f0ff;
+  --bg2:#f2f8ff;
+  --primary:#3399ff;
+  --primary-dark:#0066cc;
+  --accent:#99c2ff;
+  --text:#003366;
+  --card:#ffffff;
+  --shadow:0 6px 20px rgba(0,0,0,.1);
+  --radius:15px;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+
+body{
+  background: linear-gradient(to bottom, var(--bg1), var(--bg2));
+  min-height:100vh; display:flex; flex-direction:column; color:#333;
+}
+
+/* ===== Cabeçalho ===== */
+header{
+  text-align:center; padding:28px 16px;
+  background: linear-gradient(to right, #cce0ff, var(--accent));
+  color:var(--text); box-shadow:0 4px 8px rgba(0,0,0,.08);
+}
+
+/* ===== Conteúdo ===== */
+main{ flex:1; display:flex; align-items:center; justify-content:center; padding:24px; }
+
+.pagamento-container{
+  width:100%; max-width:480px; background:var(--card); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:28px; text-align:center;
+}
+
+.pagamento-container h2{ color:var(--text); margin-bottom:12px; }
+.pagamento-container p{ margin:8px 0 14px; }
+
+/* ===== QR Code & Chave ===== */
+.qrcode{ display:block; margin:16px auto 18px; max-width:220px; border-radius:10px; }
+
+input#chave-pix{
+  width:100%; padding:12px; border:1px solid #d7d7d7; border-radius:10px;
+  font-size:15px; background:#fafcff; color:#333;
+}
+
+/* ===== Botões ===== */
+button{
+  margin-top:12px; padding:12px 18px; border:none; border-radius:10px;
+  background:var(--primary); color:#fff; font-weight:600; cursor:pointer; transition:.25s;
+  box-shadow:0 5px 12px rgba(0,0,0,.1);
+}
+button:hover{ background:var(--primary-dark); transform:translateY(-1px); }
+
+/* ===== Rodapé ===== */
+footer{
+  text-align:center; padding:18px; color:var(--text);
+  background: linear-gradient(to right, #cce0ff, var(--accent));
+}
+
+/* ===== Responsividade ===== */
+@media (max-width:480px){
+  .pagamento-container{ padding:22px; }
+  .qrcode{ max-width:180px; }
+}

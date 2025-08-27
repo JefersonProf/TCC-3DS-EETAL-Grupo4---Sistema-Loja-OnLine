@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento via PIX</title>
+  <link rel="stylesheet" href="pagamento.css">
+</head>
+<body>
+
+  <header>
+    <h1>Pagamento via PIX</h1>
+  </header>
+
+  <main>
+    <section class="pagamento-container">
+      <h2>Escaneie o QR Code abaixo para pagar</h2>
+      <img src="qrcode-pix.png" alt="QR Code PIX" class="qrcode">
+
+      <p>Total: R$ <span id="total-pix">0,00</span></p>
+      <p>Ou copie a chave PIX abaixo:</p>
+      <input type="text" id="chave-pix" value="explosaodesabores@pix.com" readonly>
+      <button onclick="copiarChave()">Copiar Chave</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Explosão de Sabores</p>
+  </footer>
+
+  <script src="pix.js"></script>
+</body>
+</html>

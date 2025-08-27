@@ -3,90 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Carrinho - Doces Gourmet Delícia</title>
+  <title>Meu Carrinho - Explosão de Sabores</title>
   <link rel="stylesheet" href="Carrinho.css" />
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <h1>Doces Gourmet Delícia</h1>
-    <p>Seu carrinho de compras</p>
+    <h1>Meu Carrinho</h1>
   </header>
 
+  <!-- Navegação -->
   <nav>
     <a href="lojaonline.html">Início</a>
     <a href="Produtos.html">Produtos</a>
+    <a href="Carrinho.html" class="active">Carrinho</a>
   </nav>
 
+  <!-- Conteúdo -->
   <main>
-    <h2>Itens no Carrinho</h2>
-    <div id="carrinho-itens"></div>
+    <section class="carrinho-container">
+      <h2>Itens no seu carrinho</h2>
+      <table id="tabela-carrinho">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço Unitário</th>
+            <th>Quantidade</th>
+            <th>Subtotal</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="itens-carrinho">
+          <!-- Produtos via JS -->
+        </tbody>
+      </table>
 
-    <div id="total-container">
-      <h3>Total: R$ <span id="total">0,00</span></h3>
-      <button id="finalizar">Finalizar Compra</button>
-    </div>
-  </main>
+      <div id="mensagem-vazio" style="display:none; text-align:center; margin:20px; font-weight:bold;">
+        Seu carrinho está vazio 🛒
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Doces Gourmet Delícia | Contato: (11) 99999-9999 | Instagram: @docesdelicia</p>
-  </footer>
-
-  <script>
-    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    const carrinhoDiv = document.getElementById('carrinho-itens');
-    const totalSpan = document.getElementById('total');
-
-    function atualizarCarrinho() {
-      carrinhoDiv.innerHTML = '';
-      let total = 0;
-
-      carrinho.forEach((item, index) => {
-        total += item.preco * item.qtd;
-
-        const itemDiv = document.createElement('div');
-        itemDiv.className = 'item-carrinho';
-        itemDiv.innerHTML = `
-          <p><strong>${item.nome}</strong></p>
-          <p>Preço: R$ ${item.preco.toFixed(2)}</p>
-          <div class="quantidade-controle">
-            <button class="menos" data-index="${index}">-</button>
-            <span>${item.qtd}</span>
-            <button class="mais" data-index="${index}">+</button>
-            <button class="remover" data-index="${index}">Remover</button>
-          </div>
-        `;
-        carrinhoDiv.appendChild(itemDiv);
-      });
-
-      totalSpan.textContent = total.toFixed(2);
-      localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    }
-
-    carrinhoDiv.addEventListener('click', (e) => {
-      const index = e.target.dataset.index;
-      if (e.target.classList.contains('mais')) {
-        carrinho[index].qtd++;
-      } else if (e.target.classList.contains('menos')) {
-        if (carrinho[index].qtd > 1) carrinho[index].qtd--;
-      } else if (e.target.classList.contains('remover')) {
-        carrinho.splice(index, 1);
-      }
-      atualizarCarrinho();
-    });
-
-    document.getElementById('finalizar').addEventListener('click', () => {
-      if (carrinho.length === 0) {
-        alert('Seu carrinho está vazio!');
-        return;
-      }
-      alert('Compra finalizada com sucesso!');
-      carrinho = [];
-      atualizarCarrinho();
-    });
-
-    atualizarCarrinho();
-  </script>
-
-</body>
-</html>
+      <div class="resumo-carrinho">
+        <h3>Total: R$ <span id="total-carrinho">0,0

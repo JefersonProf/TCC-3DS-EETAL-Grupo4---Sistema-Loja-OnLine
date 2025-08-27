@@ -2,48 +2,76 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Doces Gourmet Delícia</title>
-  <link rel="stylesheet" href="lojaonline.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explosão de Sabores | Sobre Nós</title>
+  <link rel="stylesheet" href="SobreNós.css" />
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <h1>Doces Gourmet Delícia</h1>
-    <p>Os melhores doces artesanais para você!</p>
+    <h1>Explosão de Sabores</h1>
+    <p>O amor pelos doces que transformam momentos em memórias</p>
   </header>
 
+  <!-- Navegação -->
   <nav>
     <a href="lojaonline.html">Início</a>
     <a href="Produtos.html">Produtos</a>
-    <a href="SobreNós.html">Sobre Nós</a>
+    <a href="SobreNós.html" class="active">Sobre Nós</a>
   </nav>
 
-  <section class="produtos">
-    <div class="produto" data-nome="Brigadeiro Gourmet" data-preco="15.00">
-      <img src="https://via.placeholder.com/250x150?text=Brigadeiro+Gourmet" alt="Brigadeiro Gourmet" />
-      <h3>Brigadeiro Gourmet</h3>
-      <p>Caixa com 6 unidades. Feito com chocolate belga.</p>
-      <button class="btn-comprar">Comprar</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Sobre Nós</h2>
+    <p>A <strong>Explosão de Sabores</strong> nasceu do sonho das irmãs <strong>Daphené</strong> e <strong>Danieli</strong>: transformar momentos especiais em memórias doces e inesquecíveis, oferecendo experiências únicas a cada cliente.</p>
+  </section>
+
+  <!-- Founders Section -->
+  <section class="founders">
+    <div class="founder-card">
+      <img src="fundadora1.jpg" alt="Foto de Daphené" class="avatar">
+      <div class="founder-info">
+        <h3>Daphené</h3>
+        <p>Responsável pelos detalhes e acabamento impecável dos doces. Tem olhar refinado e amor em cada criação.</p>
+      </div>
     </div>
-    <div class="produto" data-nome="Brownie de Nutella" data-preco="20.00">
-      <img src="https://via.placeholder.com/250x150?text=Brownie+de+Nutella" alt="Brownie de Nutella" />
-      <h3>Brownie de Nutella</h3>
-      <p>Brownie macio e recheado com Nutella cremosa.</p>
-      <button class="btn-comprar">Comprar</button>
-    </div>
-    <div class="produto" data-nome="Beijinho Gourmet" data-preco="12.00">
-      <img src="https://via.placeholder.com/250x150?text=Beijinho+Gourmet" alt="Beijinho Gourmet" />
-      <h3>Beijinho Gourmet</h3>
-      <p>Com coco fresco e leite condensado premium.</p>
-      <button class="btn-comprar">Comprar</button>
+    
+    <div class="founder-card">
+      <img src="fundadora2.jpg" alt="Foto de Danieli" class="avatar">
+      <div class="founder-info">
+        <h3>Danieli</h3>
+        <p>A mente inovadora da marca, sempre em busca de novas combinações para surpreender os paladares mais exigentes.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Values Section -->
+  <section class="values">
+    <h2>Nossos Valores</h2>
+    <div class="grid-values">
+      <div class="value">
+        <h3>Qualidade</h3>
+        <p>Selecionamos os melhores ingredientes para garantir sabor e sofisticação.</p>
+      </div>
+      <div class="value">
+        <h3>Carinho</h3>
+        <p>Cada doce é preparado com dedicação, cuidado e muito amor.</p>
+      </div>
+      <div class="value">
+        <h3>Inovação</h3>
+        <p>Buscamos sempre novas ideias para tornar sua experiência inesquecível.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Doces Gourmet Delícia | Contato: (11) 99999-9999 | Instagram: @docesdelicia</p>
+    <p>© 2025 Explosão de Sabores | Contato: (11) 99999-9999 | Instagram: @docesdelicias</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- ⚠️ Corrigido: antes estava chamando "SobreNós.html" -->
+  <script src="SobreNós.js"></script>
+
 </body>
 </html>

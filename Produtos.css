@@ -1,8 +1,21 @@
+/* Variáveis globais */
+:root {
+  --font: 'Times New Roman', serif;
+  --bg: linear-gradient(to bottom, #e6f0ff 0%, #f2f8ff 100%);
+  --text: #333;
+  --primary: #3399ff;
+  --secondary: #99c2ff;
+  --highlight: #66b3ff;
+  --danger: #ff4d4d;
+  --shadow: 0 4px 12px rgba(0,0,0,0.1);
+  --border-radius: 12px;
+}
+
 /* ====== Estilos Gerais ====== */
 body {
-  background: linear-gradient(to bottom, #e6f0ff 0%, #f2f8ff 100%);
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: #333;
+  background: var(--bg);
+  font-family: var(--font);
+  color: var(--text);
   margin: 0;
   padding: 0;
   display: flex;
@@ -15,8 +28,8 @@ body {
 header {
   text-align: center;
   padding: 35px 20px;
-  background: linear-gradient(to right, #cce0ff, #99c2ff);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: linear-gradient(to right, #cce0ff, var(--secondary));
+  box-shadow: var(--shadow);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -41,9 +54,9 @@ nav {
   align-items: center;
   gap: 30px;
   padding: 15px 0;
-  background-color: #99c2ff;
+  background-color: var(--secondary);
   font-weight: bold;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow);
 }
 
 nav a {
@@ -54,19 +67,20 @@ nav a {
   transition: all 0.3s ease;
 }
 
-nav a:hover {
-  background-color: #66b3ff;
+nav a:hover,
+nav a.active {
+  background-color: var(--highlight);
   color: #fff;
 }
 
-/*botão de carrinho moderno */
+/* Botão do carrinho flutuante */
 #botao-carrinho {
   position: fixed;
   bottom: 30px;
   right: 30px;
   width: 60px;
   height: 60px;
-  background-color: #3399ff;
+  background-color: var(--primary);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -75,30 +89,23 @@ nav a:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
   z-index: 1000;
-  cursor: pointer;
 }
 
 #botao-carrinho:hover {
-  background-color: #66b3ff;
+  background-color: var(--highlight);
   transform: scale(1.1);
-}
-
-#botao-carrinho .icone {
-  font-size: 28px;
-  color: white;
 }
 
 #botao-carrinho #contador-carrinho {
   position: absolute;
   top: 5px;
   right: 5px;
-  background-color: #ff4d4d;
-  color: white;
+  background-color: var(--danger);
+  color: #fff;
   font-size: 14px;
   font-weight: bold;
   padding: 2px 6px;
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 /* ====== Container Produtos ====== */
@@ -109,7 +116,13 @@ main {
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
+}
+
+.titulo-pagina {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #003366;
 }
 
 /* ====== Card Produto ====== */
@@ -117,11 +130,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
   background-color: #fff;
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -130,11 +143,10 @@ main {
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
-/* ====== Imagem Produto ====== */
 .imagem-produto img {
   max-width: 220px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: var(--shadow);
   transition: transform 0.3s ease;
 }
 
@@ -142,7 +154,6 @@ main {
   transform: scale(1.05);
 }
 
-/* ====== Descrição Produto ====== */
 .descricao-produto {
   flex: 1;
   min-width: 250px;
@@ -165,7 +176,6 @@ label {
   margin-right: 5px;
 }
 
-/* ====== Input Quantidade ====== */
 .quantidade {
   width: 70px;
   padding: 6px;
@@ -175,40 +185,36 @@ label {
   margin-right: 15px;
 }
 
-/* ====== Botão Comprar ====== */
 .btn-comprar {
   padding: 12px 30px;
   border: none;
   border-radius: 12px;
-  background-color: #66b3ff;
+  background-color: var(--highlight);
   color: #fff;
   font-weight: bold;
   cursor: pointer;
   font-size: 1em;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow);
 }
 
 .btn-comprar:hover {
-  background-color: #3399ff;
+  background-color: var(--primary);
   transform: translateY(-2px);
-  box-shadow: 0 7px 15px rgba(0,0,0,0.15);
 }
 
-/* ====== Footer ====== */
+/* Footer */
 footer {
   text-align: center;
   padding: 30px 0;
-  background: linear-gradient(to right, #cce0ff, #99c2ff);
+  background: linear-gradient(to right, #cce0ff, var(--secondary));
   color: #003366;
   font-size: 14px;
   margin-top: auto;
   box-shadow: 0 -4px 6px rgba(0,0,0,0.05);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
-/* ====== Responsivo ====== */
+/* Responsivo */
 @media (max-width: 768px) {
   .produto-detalhe {
     flex-direction: column;
@@ -218,10 +224,6 @@ footer {
   .imagem-produto img {
     max-width: 180px;
     margin-bottom: 15px;
-  }
-
-  .descricao-produto {
-    min-width: unset;
   }
 
   .quantidade {

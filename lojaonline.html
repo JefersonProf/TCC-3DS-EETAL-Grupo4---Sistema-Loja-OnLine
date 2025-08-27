@@ -3,53 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Doces Gourmet Delícia</title>
+  <meta name="description" content="Explosão de Sabores - Loja online de doces gourmet feitos com ingredientes premium. Brigadeiros, brownies e muito mais!">
+  <title>Explosão de Sabores</title>
   <link rel="stylesheet" href="lojaonline.css" />
 </head>
 <body>
 
   <header>
-    <img src="Inserir um título.jpg" alt="Capa" />
+    <img src="Inserir um título.jpg" alt="Banner da loja Explosão de Sabores" />
   </header>
 
   <nav>
-    <a href="lojaonline.html">Início</a>
+    <a href="lojaonline.html" class="active">Início</a>
     <a href="Produtos.html">Produtos</a>
     <a href="SobreNós.html">Sobre Nós</a>
-   <!-- Botão flutuante do carrinho moderno -->
-<a href="Carrinho.html" id="botao-carrinho">
-  <span class="icone">🛒</span>
-  <span id="contador-carrinho"></span>
-</a>
-
+    <!-- Botão flutuante do carrinho moderno -->
+    <a href="Carrinho.html" id="botao-carrinho" aria-label="Abrir Carrinho">
+      <span class="icone">🛒</span>
+      <span id="contador-carrinho"></span>
+    </a>
   </nav>
 
-  <section class="produtos">
-    <div class="produto" data-nome="Brigadeiro Gourmet" data-preco="10.00">
-      <img src="brigadeiro.png" alt="Brigadeiro Gourmet" />
-      <h3>Brigadeiro Gourmet</h3>
-      <p>Caixa com 4 unidades. Feito com chocolate belga.</p>
-      <button class="btn-comprar">Comprar</button>
-    </div>
+  <main>
+    <h1 class="titulo-principal">Nossos Doces</h1>
 
-    <div class="produto" data-nome="Brownie de Nutella" data-preco="15.00">
-      <img src="Brownie.png" alt="Brownie de Nutella" />
-      <h3>Brownie de Nutella</h3>
-      <p>Brownie macio e recheado com Nutella cremosa.</p>
-      <button class="btn-comprar">Comprar</button>
-    </div>
+    <section class="produtos">
+      <div class="produto" data-nome="Brigadeiro Gourmet" data-preco="10.00">
+        <img src="brigadeiro.png" alt="Brigadeiro Gourmet - caixa com 4 unidades" />
+        <h3>Brigadeiro Gourmet</h3>
+        <p>Caixa com 4 unidades. Feito com chocolate belga.</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
 
-    <div class="produto" data-nome="Beijinho Gourmet" data-preco="10.00">
-      <img src="beijinho-de-coco.png" alt="Beijinho Gourmet" />
-      <h3>Beijinho Gourmet</h3>
-      <p>Com coco fresco e leite condensado premium.</p>
-      <button class="btn-comprar">Comprar</button>
-    </div>
+      <div class="produto" data-nome="Brownie de Nutella" data-preco="15.00">
+        <img src="Brownie.png" alt="Brownie de Nutella recheado" />
+        <h3>Brownie de Nutella</h3>
+        <p>Brownie macio e recheado com Nutella cremosa.</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
 
-  </section>
+      <div class="produto" data-nome="Beijinho Gourmet" data-preco="10.00">
+        <img src="beijinho-de-coco.png" alt="Beijinho Gourmet com coco fresco" />
+        <h3>Beijinho Gourmet</h3>
+        <p>Com coco fresco e leite condensado premium.</p>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Doces Gourmet Delícia | Contato: (11) 99999-9999 | Instagram: @docesdelicia</p>
+    <div class="container foot">
+      <div class="brand-line">
+        <h3>Explosão de Sabores</h3>
+      </div>
+      <div class="small">Contato: (11) 99999-9999 | Instagram: @docesdelicias | Email: contato@explosaodesabores.com</div>
+    </div>
   </footer>
 
   <script src="script.js"></script>

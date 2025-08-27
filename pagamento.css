@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2f8ff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(to right, #cce0ff, #99c2ff);
+  color: #003366;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagamento-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.pagamento-container h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn, button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #3399ff;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover, button:hover {
+  background: #0066cc;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.qrcode {
+  max-width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(to right, #cce0ff, #99c2ff);
+  color: #003366;
+}

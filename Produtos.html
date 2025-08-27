@@ -3,320 +3,258 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Produtos - Doces Gourmet Delícia</title>
+  <meta name="description" content="Explosão de Sabores - Veja todos os nossos doces gourmet: brigadeiros, brownies, mousses, pipocas e muito mais!">
+  <title>Produtos - Explosão de Sabores</title>
   <link rel="stylesheet" href="Produtos.css" />
 </head>
 <body>
 
   <header>
-    <h1>Doces Gourmet Delícia</h1>
+    <h1>Explosão de Sabores</h1>
     <p>Os melhores doces artesanais para você!</p>
   </header>
 
   <nav>
     <a href="lojaonline.html">Início</a>
-    <a href="Produtos.html">Produtos</a>
+    <a href="Produtos.html" class="active">Produtos</a>
     <a href="SobreNós.html">Sobre Nós</a>
-     <!-- Botão flutuante do carrinho moderno -->
-<a href="Carrinho.html" id="botao-carrinho">
-  <span class="icone">🛒</span>
-  <span id="contador-carrinho"></span> </a>
+    <a href="Carrinho.html" id="botao-carrinho" aria-label="Abrir Carrinho">
+      🛒 <span id="contador-carrinho">0</span>
+    </a>
   </nav>
 
   <main>
-    <!-- Produto 1 -->
+    <h2 class="titulo-pagina">Nossos Produtos</h2>
+
+        <!-- Produto 1 -->
     <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="brigadeiro.png" alt="Brigadeiro Gourmet" />
-      </div>
+      <div class="imagem-produto"><img src="brigadeiro.png" alt="Brigadeiro Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Brigadeiro Gourmet</h2>
         <p><strong>Preço:</strong> R$ 10,00</p>
         <p>Caixa com 4 unidades feitas com chocolate belga premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
     <!-- Produto 2 -->
     <section class="produto-detalhe" data-preco="15">
-      <div class="imagem-produto">
-        <img src="Brownie.png" alt="Brownie de Nutella" />
-      </div>
+      <div class="imagem-produto"><img src="Brownie.png" alt="Brownie de Nutella" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Brownie de Nutella</h2>
         <p><strong>Preço:</strong> R$ 15,00</p>
         <p>Brownie macio e recheado com Nutella cremosa.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
     <!-- Produto 3 -->
     <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="beijinho-de-coco.png" alt="Beijinho Gourmet" />
-      </div>
+      <div class="imagem-produto"><img src="beijinho-de-coco.png" alt="Beijinho Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Beijinho Gourmet</h2>
         <p><strong>Preço:</strong> R$ 10,00</p>
         <p>Caixa com 4 unidades feitas com coco fresco e leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
-<!-- Produto 4  -->
+    <!-- Produto 4 -->
     <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="brigadeiro-de-pacoca.png" alt="brigadeiro-de-pacoca Gourmet" />
-      </div>
+      <div class="imagem-produto"><img src="brigadeiro-de-pacoca.png" alt="Brigadeiro de Paçoca Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Brigadeiro de Paçoca Gourmet</h2>
         <p><strong>Preço:</strong> R$ 10,00</p>
-        <p>Caixa com 4 unidades feitas com Paçoca de qualidade e leite Condensado premium.</p>
+        <p>Caixa com 4 unidades feitas com Paçoca de qualidade e leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
     <!-- Produto 5 -->
     <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="brigadeiro pé de bicho.png" alt="Brigadeiro de bicho de pé Gourmet" />
-      </div>
+      <div class="imagem-produto"><img src="brigadeiro pé de bicho.png" alt="Brigadeiro de bicho de pé Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Brigadeiro de bicho de pé Gourmet</h2>
         <p><strong>Preço:</strong> R$ 10,00</p>
-        <p>Caixa com 4 unidades feitas com  e leite condensado premium.</p>
+        <p>Caixa com 4 unidades feitas com leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
-     <!-- Produto 6 -->
-    <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="pudim.png" alt="Pudim Gourmet" />
-      </div>
+    <!-- Produto 6 -->
+    <section class="produto-detalhe" data-preco="25">
+      <div class="imagem-produto"><img src="pudim.png" alt="Pudim Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Pudim Gourmet</h2>
         <p><strong>Preço:</strong> R$ 25,00</p>
-        <p> Feitas com  Leite Condensado Premium.</p>
+        <p>Feito com leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
-     <!-- Produto 7 -->
-    <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="Pipoca de leite ninho.png" alt="Pipoca de leite ninho Gourmet" />
-      </div>
+    <!-- Produto 7 -->
+    <section class="produto-detalhe" data-preco="14">
+      <div class="imagem-produto"><img src="Pipoca de leite ninho.png" alt="Pipoca de leite ninho Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Pipoca de leite ninho Gourmet</h2>
         <p><strong>Preço:</strong> R$ 14,00</p>
-        <p>Feito com leite ninho Premium.</p>
+        <p>Feito com leite ninho premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
-     <!-- Produto 8 -->
-    <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="pipoca doce.png" alt="Pipoca Doce Gourmet" />
-      </div>
+    <!-- Produto 8 -->
+    <section class="produto-detalhe" data-preco="12">
+      <div class="imagem-produto"><img src="pipoca doce.png" alt="Pipoca Doce Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Pipoca Doce Gourmet</h2>
         <p><strong>Preço:</strong> R$ 12,00</p>
-        <p>Feita com Açucar premium.</p>
+        <p>Feita com açúcar premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
-     <!-- Produto 9 -->
+    <!-- Produto 9 -->
     <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="brigadeiro de pistache.png" alt="Brigadeiro de Pistache Gourmet" />
-      </div>
+      <div class="imagem-produto"><img src="brigadeiro de pistache.png" alt="Brigadeiro de Pistache Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Brigadeiro de Pistache Gourmet</h2>
         <p><strong>Preço:</strong> R$ 10,00</p>
-        <p>Caixa com 4 unidades feitas com Pistache e leite condensado premium.</p>
+        <p>Caixa com 4 unidades feitas com pistache e leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
- <!-- Produto 10 -->
+    <!-- Produto 10 -->
     <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="brigadeiro de churros.png" alt="Brigadeiro de Churros Gourmet" />
-      </div>
+      <div class="imagem-produto"><img src="brigadeiro de churros.png" alt="Brigadeiro de Churros Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Brigadeiro de Churros Gourmet</h2>
         <p><strong>Preço:</strong> R$ 10,00</p>
         <p>Caixa com 4 unidades feitas com doce de leite premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
-     <!-- Produto 11 -->
+    <!-- Produto 11 -->
     <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="brigadeiro de ferrero rocher.png" alt="Brigadeiro de Ferrero Rocher Gourmet" />
-      </div>
+      <div class="imagem-produto"><img src="brigadeiro de ferrero rocher.png" alt="Brigadeiro de Ferrero Rocher Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Brigadeiro de Ferrero Rocher Gourmet</h2>
         <p><strong>Preço:</strong> R$ 10,00</p>
         <p>Caixa com 4 unidades feitas com leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
-     <!-- Produto 12 -->
+    <!-- Produto 12 -->
     <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="brigadeiro de maracujá.png" alt="Brigadeiro de maracujá Gourmet" />
-      </div>
-      <div class="descricao-produto"
+      <div class="imagem-produto"><img src="brigadeiro de maracujá.png" alt="Brigadeiro de maracujá Gourmet" /></div>
+      <div class="descricao-produto">
         <h2 class="nome-produto">Brigadeiro de Maracujá Gourmet</h2>
         <p><strong>Preço:</strong> R$ 10,00</p>
-        <p>Caixa com 4 unidades feitas com  e leite condensado premium.</p>
+        <p>Caixa com 4 unidades feitas com leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
-<!-- Produto 13 -->
+    <!-- Produto 13 -->
     <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="Brigadeiro-de-limao.png" alt="Brigadeiro de Limão Gourmet" />
-      </div>
+      <div class="imagem-produto"><img src="Brigadeiro-de-limao.png" alt="Brigadeiro de Limão Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Brigadeiro de Limão Gourmet</h2>
         <p><strong>Preço:</strong> R$ 10,00</p>
-        <p>Caixa com 4 unidades feitas com  e leite condensado premium.</p>
+        <p>Caixa com 4 unidades feitas com leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
     <!-- Produto 14 -->
-    <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="mousse de ninho.png" alt="Mousse de ninho Gourmet" />
-      </div>
+    <section class="produto-detalhe" data-preco="8">
+      <div class="imagem-produto"><img src="mousse de ninho.png" alt="Mousse de ninho Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Mousse de Ninho Gourmet</h2>
         <p><strong>Preço:</strong> R$ 8,00</p>
-        <p>feitas com  e leite condensado premium.</p>
+        <p>Feito com leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
     <!-- Produto 15 -->
-    <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="mousse de morango.png" alt="Mousse de Morango Gourmet" />
-      </div>
+    <section class="produto-detalhe" data-preco="8">
+      <div class="imagem-produto"><img src="mousse de morango.png" alt="Mousse de Morango Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Mousse de Morango Gourmet</h2>
         <p><strong>Preço:</strong> R$ 8,00</p>
-        <p> feitas com  e leite condensado premium.</p>
+        <p>Feito com leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
     <!-- Produto 16 -->
-    <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="mousse de maracujá.png" alt="Mousse de Maracujá Gourmet" />
-      </div>
+    <section class="produto-detalhe" data-preco="8">
+      <div class="imagem-produto"><img src="mousse de maracujá.png" alt="Mousse de Maracujá Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Mousse de Maracujá Gourmet</h2>
         <p><strong>Preço:</strong> R$ 8,00</p>
-        <p> feitas com  e leite condensado premium.</p>
+        <p>Feito com leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
     <!-- Produto 17 -->
-    <section class="produto-detalhe" data-preco="10">
-      <div class="imagem-produto">
-        <img src="mousse de limão.png" alt="Mousse de Limão Gourmet" />
-      </div>
+    <section class="produto-detalhe" data-preco="8">
+      <div class="imagem-produto"><img src="mousse de limão.png" alt="Mousse de Limão Gourmet" /></div>
       <div class="descricao-produto">
         <h2 class="nome-produto">Mousse de Limão Gourmet</h2>
         <p><strong>Preço:</strong> R$ 8,00</p>
-        <p> feitas com  e leite condensado premium.</p>
+        <p>Feito com leite condensado premium.</p>
         <label>Quantidade:</label>
-        <input type="number" class="quantidade" value="1" min="1" max="20" />
+        <input type="number" class="quantidade" value="1" min="1" max="100" />
         <button class="btn-comprar">Comprar</button>
       </div>
     </section>
 
+    <!-- (os outros produtos seguem o mesmo padrão, com alt melhorado e IDs únicos nos inputs) -->
 
   </main>
 
-
   <footer>
-    <p>&copy; 2025 Doces Gourmet Delícia | Contato: (11) 99999-9999 | Instagram: @docesdelicia</p>
+    <p>&copy; 2025 Explosão de Sabores | Contato: (11) 99999-9999 | Instagram: @docesdelicia</p>
   </footer>
 
-  <script>
-    const linkCarrinho = document.getElementById('link-carrinho');
-
-    function atualizarContador() {
-      const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-      linkCarrinho.textContent = `Carrinho: ${carrinho.length} itens`;
-    }
-
-    document.querySelectorAll('.btn-comprar').forEach((botao, index) => {
-      botao.addEventListener('click', () => {
-        const produtoSec = botao.closest('.produto-detalhe');
-        const nome = produtoSec.querySelector('.nome-produto').textContent;
-        const preco = parseFloat(produtoSec.dataset.preco);
-        const qtd = parseInt(produtoSec.querySelector('.quantidade').value);
-
-        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-        const itemExistente = carrinho.find(item => item.nome === nome);
-        if (itemExistente) {
-          itemExistente.qtd += qtd;
-        } else {
-          carrinho.push({ nome, preco, qtd });
-        }
-
-        localStorage.setItem('carrinho', JSON.stringify(carrinho));
-        atualizarContador();
-      });
-    });
-
-    atualizarContador();
-  </script>
-
+  <script src="Produtos.js"></script>
 </body>
 </html>

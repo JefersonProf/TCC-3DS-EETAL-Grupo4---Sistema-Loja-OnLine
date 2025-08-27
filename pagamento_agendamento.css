@@ -1,0 +1,10 @@
+body{font-family:var(--font);background:var(--bg);color:var(--text);}
+.container{max-width:600px;margin:0 auto;padding:0 20px;text-align:center;}
+header{background:var(--secondary);padding:15px 0;box-shadow:var(--shadow);}
+header .logo img{height:50px;}
+header nav a{margin-left:20px;text-decoration:none;color:var(--primary);font-weight:600;transition:0.3s;}
+header nav a:hover{text-decoration:underline;}
+
+.resumo-card{background:#fff;padding:20px;border-radius:var(--border-radius);box-shadow:var(--shadow);margin:20px 0;font-weight:600;}
+button{width:200px;padding:12px;margin:10px;border:none;border-radius:var(--border-radius);background:var(--primary);color:#fff;font-weight:600;cursor:pointer;transition:0.3s;}
+button:hover{background:#c81b40;}
