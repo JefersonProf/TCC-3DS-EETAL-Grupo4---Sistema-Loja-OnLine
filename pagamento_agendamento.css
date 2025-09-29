@@ -1,10 +1,87 @@
-body{font-family:var(--font);background:var(--bg);color:var(--text);}
-.container{max-width:600px;margin:0 auto;padding:0 20px;text-align:center;}
-header{background:var(--secondary);padding:15px 0;box-shadow:var(--shadow);}
-header .logo img{height:50px;}
-header nav a{margin-left:20px;text-decoration:none;color:var(--primary);font-weight:600;transition:0.3s;}
-header nav a:hover{text-decoration:underline;}
+/* ===== Reset & Fonte ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
 
-.resumo-card{background:#fff;padding:20px;border-radius:var(--border-radius);box-shadow:var(--shadow);margin:20px 0;font-weight:600;}
-button{width:200px;padding:12px;margin:10px;border:none;border-radius:var(--border-radius);background:var(--primary);color:#fff;font-weight:600;cursor:pointer;transition:0.3s;}
-button:hover{background:#c81b40;}
+body {
+  background: #f2f8ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(to right, #cce0ff, #99c2ff);
+  color: #003366;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Container ===== */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.agendamento-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.agendamento-container h2 {
+  color: #003366;
+  margin-bottom: 18px;
+}
+
+.agendamento-container p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* ===== Botão ===== */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #3399ff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0066cc;
+  transform: translateY(-1px);
+}
+
+/* ===== Mensagem ===== */
+#mensagem {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(to right, #cce0ff, #99c2ff);
+  color: #003366;
+  margin-top: auto;
+}

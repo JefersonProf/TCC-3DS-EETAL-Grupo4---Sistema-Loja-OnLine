@@ -17,7 +17,6 @@ function renderizarCarrinho() {
   }
 
   let total = 0;
-
   carrinho.forEach((item, index) => {
     const subtotal = item.preco * item.qtd;
     total += subtotal;
@@ -52,12 +51,14 @@ function removerItem(index) {
   renderizarCarrinho();
 }
 
-// Finalizar compra
-finalizarCompraBtn.addEventListener('click'), () => {
+// Finalizar compra (CORRIGIDO)
+finalizarCompraBtn.addEventListener('click', () => {
   let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
   if (carrinho.length === 0) {
     alert("Seu carrinho está vazio!");
     return;
   }
-  window.location.href = "pag";
-}
+  window.location.href = "pagamento.html"; // redireciona para pagamento
+});
+
+renderizarCarrinho();

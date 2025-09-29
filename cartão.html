@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagamento com Cartão</title>
-  <link rel="stylesheet" href="pagamento.css">
+  <title>Pagamento com Cartão - Explosão de Sabores</title>
+  <link rel="stylesheet" href="cartao.css">
 </head>
 <body>
-
   <header>
     <h1>Pagamento com Cartão</h1>
   </header>
@@ -22,15 +21,22 @@
         <label for="numero">Número do Cartão:</label>
         <input type="text" id="numero" required pattern="\d{16}" maxlength="16" placeholder="16 dígitos">
 
-        <label for="validade">Validade (MM/AA):</label>
-        <input type="text" id="validade" required pattern="\d{2}/\d{2}" placeholder="MM/AA">
-
-        <label for="cvv">CVV:</label>
-        <input type="password" id="cvv" required pattern="\d{3}" maxlength="3" placeholder="3 dígitos">
+        <div class="form-row">
+          <div>
+            <label for="validade">Validade (MM/AA):</label>
+            <input type="text" id="validade" required pattern="\d{2}/\d{2}" placeholder="MM/AA">
+          </div>
+          <div>
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" required pattern="\d{3}" maxlength="3" placeholder="3 dígitos">
+          </div>
+        </div>
 
         <p>Total: R$ <span id="total-cartao">0,00</span></p>
         <button type="submit">Pagar</button>
       </form>
+
+      <a href="pagamento.html" class="btn-voltar">⬅ Voltar</a>
       <p id="mensagem"></p>
     </section>
   </main>

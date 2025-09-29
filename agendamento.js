@@ -26,6 +26,6 @@ form.addEventListener("submit", (e) => {
   const agendamento = { nome, email, telefone, data, servico, preco };
   localStorage.setItem("agendamento", JSON.stringify(agendamento));
 
-  // Redirecionar para pagamento
+  // Redirecionar para pagamento do agendamento
   window.location.href = "pagamento_agendamento.html";
 });

@@ -4,22 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagamento do Agendamento</title>
-  <link rel="stylesheet" href="agendamento_agendamento.css">
+  <link rel="stylesheet" href="pagamento_agendamento.css">
 </head>
 <body>
-
   <header>
     <h1>Pagamento do Agendamento</h1>
   </header>
 
   <main>
-    <section class="agendamento-container">
-      <h2>Confirme seu pagamento</h2>
-      <p>Serviço: <span id="servico"></span></p>
-      <p>Data: <span id="data"></span></p>
-      <p>Valor: R$ <span id="valor"></span></p>
+    <section class="pagamento-container">
+      <h2>Resumo do Agendamento</h2>
+      <p><strong>Serviço:</strong> <span id="servico"></span></p>
+      <p><strong>Data:</strong> <span id="data"></span></p>
+      <p><strong>Valor:</strong> R$ <span id="valor"></span></p>
 
-      <button id="pagar">Pagar</button>
+      <div class="opcoes">
+        <a href="pix.html" class="btn">💸 Pagar com PIX</a>
+        <a href="cartao.html" class="btn">💳 Pagar com Cartão</a>
+        <a href="agendamento.html" class="btn btn-voltar">⬅ Voltar</a>
+      </div>
+
       <p id="mensagem"></p>
     </section>
   </main>

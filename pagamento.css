@@ -43,7 +43,7 @@ main {
   margin-top: 20px;
 }
 
-.btn, button {
+.btn {
   display: inline-block;
   padding: 12px 20px;
   background: #3399ff;
@@ -56,23 +56,18 @@ main {
   transition: 0.3s;
 }
 
-.btn:hover, button:hover {
+.btn:hover {
   background: #0066cc;
 }
 
-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+.btn-voltar {
+  background: #ccc;
+  color: #000;
 }
 
-.qrcode {
-  max-width: 200px;
-  margin: 20px auto;
-  display: block;
+.btn-voltar:hover {
+  background: #999;
+  color: #fff;
 }
 
 footer {
